@@ -1,0 +1,98 @@
+.body{   /*class*/
+display:none;
+}
+
+.body.show{
+display: block;
+}
+
+.date {
+	color:#7c9ba5;
+	background-color: white;
+	border-radius: 20px;
+	 padding: 5px; 
+	 margin-left: 0.5cm;
+	 box-shadow: 5px 5px 5px grey;
+   width: 1000px;
+}
+
+.sender {
+	color:00509a;
+	background: #f9ce97;
+	 padding: 2px;
+	 margin-left: 0.75cm;
+   width: 985px;
+  
+}
+
+.subject {
+	color: red;
+	background: #f9ce97;
+	 padding: 2px; 
+	 margin-left: 0.75cm;
+	/*font-size:18px;*/
+	animation: blinker 10s linear infinite;
+  width: 985px;
+
+}
+
+.subject-switch:hover { 
+   background-color: lightblue;
+   color: white;
+}
+
+.body {
+	/*color: black;*/
+	  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  background: #fdf0df;
+  border-radius: 15px 40px;
+  background: linear-gradient(top, #f9d835, #f3961c);
+  margin-left: 0.10cm;
+  width: 965px;
+  box-shadow: 5px 5px 5px grey;
+  /*box-shadow: inset 0px 0px 15px rgba(0,0,0,0.6);*/
+  /*box-shadow: 5px 5px 5px grey;*/
+
+
+}
+
+body {
+    background-color: lightblue;
+}
+
+@keyframes blinker {  
+  0% { opacity: 1.0; }
+}
+
+h2 {
+ -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  font: normal normal bold 60px/normal "Bad Script", Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0);
+  text-align: left;
+  margin-left: 10.0cm;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 0 0 rgb(217,31,38) , 6px 0 0 rgb(226,91,14) , 9px 0 0 rgb(245,221,8) , 12px 0 0 rgb(5,148,68) , 15px 0 0 rgb(2,135,206) , 18px 0 0 rgb(4,77,145) , 21px 0 0 rgb(42,21,113) ;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+h2:hover {
+  text-shadow: -3px 0 0 rgb(217,31,38) , -6px 0 0 rgb(226,91,14) , -9px 0 0 rgb(245,221,8) , -12px 0 0 rgb(5,148,68) , -15px 0 0 rgb(2,135,206) , -18px 0 0 rgb(4,77,145) , -21px 0 0 rgb(42,21,113) ;
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+}
+
+

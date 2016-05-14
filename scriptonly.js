@@ -1,12 +1,7 @@
-<html>
-	<head>
-		<script src="js/mail-generator.js"></script>
-		<link href="css/style.css" rel="stylesheet" media="screen">
-    <script>
-      window.onload = function(){
+    //window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        
+        console.log("test");
         function loadMail(messages){
         	for(var i=0; i<messages.length; i++){
         		console.log(messages[i].subject); 
@@ -28,48 +23,30 @@
             	subjectDiv.className = "subject";
             	subjectDiv.innerHTML = messages[i].subject;
             	container.appendChild(subjectDiv);
-                //subjectDiv.addEventListener('click',showMessage);
-                //console.log("The subject");
 
                 var bodyDiv = document.createElement('div');
                 bodyDiv.className = "body";
                 bodyDiv.innerHTML = messages[i].body;
-                subjectDiv.appendChild(bodyDiv);
+                container.appendChild(bodyDiv);
 
         	}
         }
 
-        loadMail(geemails);
+        //loadMail(geemails);
+        	console.log(geemails);
 
-        	//console.log(geemails);
-
-
-
-       var bodyContent = document.getElementsByClassName('subject');
-        for(var i = 0; i<bodyContent.length; i++){
-            bodyContent[i].addEventListener('click',showMeDaMoney);
+        var bodyContent = document.getElementsByClassName('subject');
+        for(var i = 0; i<bodyMessages.length; i++){
+            bodyMessages[i].addEventListener('click',showMessage);
         }
 
-        function showMeDaMoney(){
-            console.log("You reached here!");
-          var showBody = this.querySelectorAll('.body')[0];
-            if(showBody.classList.contains('show')=== false){
-                return showBody.classList.add('show');
-            }else {
+        function showMessage(){
+            var showBody = this.querySelectorAll('.body')[0];
+            if(showBobdy.classList.contains('show')===false){
+                return showBody.classList.add()('show');
+            }
+            else {
                 return showBody.classList.remove('show');
             }
-        }
-
-};      
-    </script>
-	</head>
-	<body>
-
-			#text
-
-			<h1></h1>
-			<div id="inbox"><h2>INBOX:</h2></div>
-			<div id="container">
-		</div>
-	</body>
-</html>
+        
+}      
